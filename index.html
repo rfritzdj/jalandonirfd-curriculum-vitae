@@ -1,4 +1,340 @@
-        <section id="development">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rian Fritz D. Jalandoni — Curriculum Vitae</title>
+<meta name="description" content="Rian Fritz D. Jalandoni — PhD Candidate in Quantitative Life Science at McGill University. Research on dynamical systems, network models, and computational neuroscience across biological scales.">
+
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ambient tessellation canvas, purely decorative -->
+<canvas id="tessellation" aria-hidden="true"></canvas>
+
+<div class="page">
+
+  <!-- ============ SIDEBAR ============ -->
+  <header class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+
+      <div class="identity">
+        <div class="monogram" aria-hidden="true">RFJ</div>
+        <h1 class="name">Rian Fritz D.<br>Jalandoni<span class="degree">, MSc</span></h1>
+        <p class="role">PhD Candidate, Quantitative&nbsp;Life&nbsp;Science<br>McGill University</p>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+        <span>Menu</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Section navigation">
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#conferences" class="nav-link">Conferences</a>
+        <a href="#development" class="nav-link">Development</a>
+        <a href="#affiliations" class="nav-link">Affiliations</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a class="cv-download" href="assets/Jalandoni_CV.pdf" download>
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 1.5v9m0 0L4.5 7M8 10.5L11.5 7M2.5 13.5h11" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Download CV (PDF)
+        </a>
+        <ul class="social-row">
+          <li><a href="mailto:rian.jalandoni@mail.mcgill.ca" title="Email" aria-label="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 5.5h18v13H3z" stroke="currentColor" stroke-width="1.4"/><path d="M3.5 6l8.5 7 8.5-7" stroke="currentColor" stroke-width="1.4"/></svg>
+          </a></li>
+          <li><a href="https://www.linkedin.com/in/rian-fritz-jalandoni-0ab7b7190/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4.5 8.5h3.2V19H4.5zM6.1 3.5a1.9 1.9 0 110 3.8 1.9 1.9 0 010-3.8zM10.7 8.5h3.06v1.44h.04c.43-.8 1.47-1.65 3.02-1.65 3.23 0 3.83 2.05 3.83 4.72V19h-3.2v-5.35c0-1.28-.02-2.92-1.8-2.92-1.8 0-2.08 1.38-2.08 2.82V19h-3.2z" fill="currentColor"/></svg>
+          </a></li>
+          <li><a href="https://github.com/yourusername" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.53 9.53 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z" fill="currentColor"/></svg>
+          </a></li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============ MAIN ============ -->
+  <main id="main">
+
+    <section class="hero">
+      <p class="hero-eyebrow">Curriculum Vitae — updated 2026</p>
+      <h2 class="hero-line">Working across scales, from cell to circuit —<br>modelling how biological systems hold their shape and change it.</h2>
+      <p class="hero-sub">I'm a PhD candidate at McGill University studying the dynamics of biological systems: how populations of cells, neurons, and replicators organize, cooperate, and fail. My work moves between analytical models, numerical simulation, and — increasingly — the tools of computational neuroscience and NeuroAI.</p>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="panel" id="research">
+      <p class="eyebrow">01 — Research</p>
+      <h3 class="panel-title">Research Interests</h3>
+      <div class="research-grid">
+        <div class="research-block">
+          <h4>Areas of interest</h4>
+          <ul class="tag-list">
+            <li>Biological Modelling &amp; Biophysics</li>
+            <li>Learning &amp; Information Processing</li>
+            <li>Network Algorithms &amp; Analysis</li>
+            <li>NeuroAI</li>
+            <li>Computational Neuroscience &amp; Psychiatry</li>
+            <li>Ecology &amp; Evolution</li>
+            <li>Numerical Simulations in Biology</li>
+            <li>Statistical Physics in Biological Systems</li>
+          </ul>
+        </div>
+        <div class="research-block">
+          <h4>Areas of research</h4>
+          <ul class="tag-list">
+            <li>Biological Modelling</li>
+            <li>Dynamical Systems in Biology</li>
+            <li>Computational Neuroscience</li>
+            <li>Behavioural Modelling</li>
+            <li>NeuroAI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="panel" id="education">
+      <p class="eyebrow">02 — Education</p>
+      <h3 class="panel-title">Education</h3>
+
+      <ol class="timeline">
+        <li class="entry">
+          <div class="entry-meta"><span class="entry-date">2023 — Present</span></div>
+          <div class="entry-body">
+            <p class="entry-title">PhD in Quantitative Life Science</p>
+            <p class="entry-org">McGill University · Montreal, Canada</p>
+          </div>
+        </li>
+        <li class="entry">
+          <div class="entry-meta"><span class="entry-date">2022 — 2023</span></div>
+          <div class="entry-body">
+            <p class="entry-title">Postgraduate Diploma in Quantitative Life Sciences</p>
+            <p class="entry-org">International Centre for Theoretical Physics · Trieste, Italy</p>
+            <p class="entry-detail">Thesis: <em>Dynamics of systems of replicators with cooperation</em> — <a href="https://ictp.primo.exlibrisgroup.com/permalink/39ICT_INST/1bcnctb/alma990001607490109086" target="_blank" rel="noopener">read thesis ↗</a></p>
+          </div>
+        </li>
+        <li class="entry">
+          <div class="entry-meta"><span class="entry-date">2020 — 2022</span></div>
+          <div class="entry-body">
+            <p class="entry-title">MSc in Physics</p>
+            <p class="entry-org">University of the Philippines–Diliman · Philippines</p>
+            <p class="entry-detail">Grade 1.03 — Outstanding Graduate Student. Thesis: <em>Numerical Analysis of Cancer Growth on a Spherical Surface and 3D Continuous Space</em></p>
+          </div>
+        </li>
+        <li class="entry">
+          <div class="entry-meta"><span class="entry-date">2015 — 2020</span></div>
+          <div class="entry-body">
+            <p class="entry-title">BSc in Applied Physics, Major in Instrumentation</p>
+            <p class="entry-org">University of the Philippines–Diliman · Philippines</p>
+            <p class="entry-detail">Grade 1.4546 — cum laude. Thesis: <em>Mechanical Model of Cancer Cells in 2D Confined Continuous Space</em></p>
+          </div>
+        </li>
+        <li class="entry">
+          <div class="entry-meta"><span class="entry-date">2011 — 2015</span></div>
+          <div class="entry-body">
+            <p class="entry-title">High School</p>
+            <p class="entry-org">Philippine Science High School — Western Visayas Campus · Philippines</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="panel" id="experience">
+      <p class="eyebrow">03 — Experience</p>
+      <h3 class="panel-title">Professional Experience</h3>
+
+      <ol class="timeline">
+        <li class="entry">
+          <div class="entry-meta"><span class="entry-date">Oct 2017 — Jul 2022</span></div>
+          <div class="entry-body">
+            <p class="entry-title">Student Researcher</p>
+            <p class="entry-org">Instrumentation Physics Laboratory — Complexity Science Group, National Institute of Physics, University of the Philippines–Diliman</p>
+            <ul class="detail-list">
+              <li>Researched the physical and mechanical effects of cancer growth in 3D volume.</li>
+              <li>Built simulation models to analyze mechanical stress in spherical cancerous tissue using Voronoi tessellations.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="entry">
+          <div class="entry-meta"><span class="entry-date">Jul 2021</span></div>
+          <div class="entry-body">
+            <p class="entry-title">Summer School Research Student</p>
+            <p class="entry-org">London Mathematical Laboratory School</p>
+            <ul class="detail-list">
+              <li>Project: <em>Stability of ecosystems with a core-periphery structure.</em></li>
+              <li>Worked on mathematical modelling of ecological systems.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="entry">
+          <div class="entry-meta"><span class="entry-date">Jun 2019 — Jul 2019</span></div>
+          <div class="entry-body">
+            <p class="entry-title">Bioinformatics Intern</p>
+            <p class="entry-org">Philippine Genome Center, University of the Philippines–Diliman</p>
+            <ul class="detail-list">
+              <li>Project: <em>A directed minimum connected dominating set for protein–protein interaction networks.</em></li>
+              <li>Applied computational methods to genomic data and biological network analysis.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="panel" id="publications">
+      <p class="eyebrow">04 — Publications</p>
+      <h3 class="panel-title">Publications &amp; Presentations</h3>
+
+      <ol class="pub-list">
+        <li>
+          <p class="pub-text">Qiu, H., Jalandoni, R.F., Derham, A., Reinisch, N., Chen, C., Vong, A., Cook, E.P., Krishnaswamy, A., Khadra, A. &amp; Sharif-Naeini, R. (2026). <em>Astrocytic FMRP regulates the function of spinal parvalbumin-expressing neurons in Fragile X Syndrome.</em> bioRxiv.</p>
+        </li>
+        <li>
+          <p class="pub-text">Jalandoni, R.F.D. &amp; Bantang, J.Y. (2022). <em>Physical and mechanical effects of cancer growth in 3D volume.</em> Proceedings of the Samahang Pisika ng Pilipinas 40, SPP-2022-2F-06. <a href="https://proceedings.spp-online.org/article/view/SPP-2022-2F-06" target="_blank" rel="noopener">↗</a></p>
+        </li>
+        <li>
+          <p class="pub-text">Jalandoni, R. &amp; Bantang, J. (2022). <em>Simulation of Nutrient-limited Cancer Growth on a Spherical Surface.</em> DOST-ASTHRDP Scholars Graduate Scholars Conference. Abstract &amp; poster.</p>
+        </li>
+        <li>
+          <p class="pub-text">Jalandoni, R.F.D. &amp; Bantang, J.Y. (2021). <em>Numerical analysis of mechanical stress in a spherical cancerous tissue.</em> Proceedings of the Samahang Pisika ng Pilipinas 39, SPP-2021-2G-05. <a href="https://proceedings.spp-online.org/article/view/SPP-2021-2G-05" target="_blank" rel="noopener">↗</a></p>
+        </li>
+        <li>
+          <p class="pub-text">Ramos, R., Jalandoni, R. &amp; Bantang, J. (2021). <em>Cellular Automaton-based Model of Neuronal Dynamics on a Spherical Surface.</em> International Workshop on Mathematical Biology. Abstract &amp; poster.</p>
+        </li>
+        <li>
+          <p class="pub-text">Jalandoni, R.F.D. &amp; Bantang, J.Y. (2020). <em>In silico study of stress distribution in a tissue surrounding a cancer growth using Centroidal Voronoi Tessellations.</em> Proceedings of the Samahang Pisika ng Pilipinas 38, SPP-2020-4A-03. <a href="https://paperview.spp-online.org/proceedings/article/view/SPP-2020-4A-03" target="_blank" rel="noopener">↗</a></p>
+        </li>
+        <li>
+          <p class="pub-text">Briones, Y.L., Castro, M.R., Jalandoni, R.D., Adorna, H.N., Dizon, J.A. &amp; Young, A.T. (2020). <em>A directed minimum connected dominating set for protein-protein interaction networks.</em> In Theory and Practice of Computation (pp. 176–187). CRC Press.</p>
+        </li>
+        <li>
+          <p class="pub-text">Jalandoni, R.F. &amp; Bantang, J. (2019). <em>Mechanical stress properties by a 2D model of cancer growth using Centroidal Voronoi Tessellations.</em> BrainsConnect 2019, St. Luke's Medical Center–Global City, Taguig City, Philippines.</p>
+        </li>
+        <li>
+          <p class="pub-text">Jalandoni, R.F. &amp; Bantang, J. (2019). <em>Mechanical stress generated by a 2D model of cancer growth using Centroidal Voronoi Tessellations.</em> 16th International Conference on Molecular Systems Biology (ICMSB), De La Salle University, Manila. Abstract &amp; poster.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CONFERENCES -->
+    <section class="panel" id="conferences">
+      <p class="eyebrow">05 — Conferences</p>
+      <h3 class="panel-title">Conferences &amp; Talks</h3>
+
+      <table class="conf-table">
+        <tbody>
+          <tr><td class="conf-name">International Conference on Mathematical Neuroscience <span class="conf-role">— Poster</span></td><td class="conf-date">Jun 2026</td></tr>
+          <tr><td class="conf-name">Center for Applied Mathematics in Bioscience and Medicine Workshop <span class="conf-role">— Short presentation</span></td><td class="conf-date">May 2026</td></tr>
+          <tr><td class="conf-name">19th Canadian Neuroscience Meeting <span class="conf-role">— Attendee</span></td><td class="conf-date">May 2026</td></tr>
+          <tr><td class="conf-name">McGill Quantitative Life Science Research Day <span class="conf-role">— Poster</span></td><td class="conf-date">Jun 2025</td></tr>
+          <tr><td class="conf-name">Center for Applied Mathematics in Bioscience and Medicine Workshop <span class="conf-role">— Short presentation</span></td><td class="conf-date">Feb 2023</td></tr>
+          <tr><td class="conf-name">40th Samahang Pisika ng Pilipinas Physics Conference <span class="conf-role">— Parallel presentation</span></td><td class="conf-date">Oct 2022</td></tr>
+          <tr><td class="conf-name">DOST-ASTHRDP Graduate Scholars' Conference <span class="conf-role">— Poster</span></td><td class="conf-date">Sep 2022</td></tr>
+          <tr><td class="conf-name">Frontiers in Theoretical Biophysics <span class="conf-role">— Participant</span></td><td class="conf-date">Nov 2021</td></tr>
+          <tr><td class="conf-name">39th Samahang Pisika ng Pilipinas Physics Conference <span class="conf-role">— Parallel presentation</span></td><td class="conf-date">Oct 2021</td></tr>
+          <tr><td class="conf-name">Intl. Workshop on Mathematical Biology (IWOMB) <span class="conf-role">— Poster · 3rd Best Poster Award</span></td><td class="conf-date">Jun 2021</td></tr>
+          <tr><td class="conf-name">6th Oxford Intl. Neuron and Brain Mechanics Workshop <span class="conf-role">— Participant</span></td><td class="conf-date">Apr 2021</td></tr>
+          <tr><td class="conf-name">ICTP Conference on Quantum Annealing / Adiabatic QC <span class="conf-role">— Participant</span></td><td class="conf-date">Oct 2020</td></tr>
+          <tr><td class="conf-name">38th Samahang Pisika ng Pilipinas Physics Conference <span class="conf-role">— Short presentation</span></td><td class="conf-date">Oct 2020</td></tr>
+          <tr><td class="conf-name">16th Intl. Conference on Molecular Systems Biology (ICMSB) <span class="conf-role">— Poster</span></td><td class="conf-date">Oct 2019</td></tr>
+          <tr><td class="conf-name">BrainsConnect 2019 — 9th Neuroscience Intl. Symposium <span class="conf-role">— Poster</span></td><td class="conf-date">Oct 2019</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- PROFESSIONAL DEVELOPMENT -->
+    <section class="panel" id="development">
+      <p class="eyebrow">06 — Development</p>
+      <h3 class="panel-title">Professional Development</h3>
+      <div class="entry">
+        <div class="entry-meta"><span class="entry-date">Feb — Mar 2023</span></div>
+        <div class="entry-body">
+          <p class="entry-title">ICTP Spring College on the Physics of Complex Systems</p>
+          <p class="entry-org">International Centre for Theoretical Physics</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AFFILIATIONS -->
+    <section class="panel" id="affiliations">
+      <p class="eyebrow">07 — Affiliations</p>
+      <h3 class="panel-title">Affiliations</h3>
+      <table class="conf-table">
+        <tbody>
+          <tr><td class="conf-name">Samahang Pisika ng Pilipinas (Physics Society of the Philippines) <span class="conf-role">— Associate Member</span></td><td class="conf-date">2020 — Present</td></tr>
+          <tr><td class="conf-name">Instrumentation Physics Laboratory, NIP, UP Diliman <span class="conf-role">— Member / Grad. Researcher</span></td><td class="conf-date">2017 — 2022</td></tr>
+          <tr><td class="conf-name">UP Kasanag (UP Regional Organization for Western Visayas) <span class="conf-role">— Publicity Committee Member</span></td><td class="conf-date">2018 — 2022</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="panel" id="skills">
+      <p class="eyebrow">08 — Skills</p>
+      <h3 class="panel-title">Technical Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-block">
+          <h4>Programming languages</h4>
+          <ul class="tag-list mono">
+            <li>Python</li><li>Julia</li><li>C</li><li>C++</li><li>PHP</li><li>HTML</li><li>MATLAB</li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h4>Models &amp; methods</h4>
+          <ul class="tag-list mono">
+            <li>TensorFlow</li><li>Qiskit</li><li>Neural Networks</li><li>NLP</li><li>Image Processing</li><li>ARIMA Models</li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h4>Tools</h4>
+          <ul class="tag-list mono">
+            <li>GIMP</li><li>ImageJ</li><li>Minitab</li><li>Adobe Photoshop</li><li>Microsoft Office</li><li>LaTeX</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <section class="panel contact-panel" id="contact">
+      <p class="eyebrow">09 — Contact</p>
+      <h3 class="panel-title">Get in touch</h3>
+      <p class="contact-text">The best way to reach me is by email — I'm always glad to talk about cell dynamics, network models, or where computational neuroscience is headed.</p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:rian.jalandoni@mail.mcgill.ca">rian.jalandoni@mail.mcgill.ca</a>
+        <a class="contact-link" href="https://www.linkedin.com/in/rian-fritz-jalandoni-0ab7b7190/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="contact-link" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <p class="location-line">Montreal, Canada · Iloilo City, Philippines</p>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2026 Rian Fritz D. Jalandoni. Built with plain HTML, CSS &amp; JS.</p>
+    </footer>
+
+  </main>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>        <section id="development">
             <h2>Professional Development Activities</h2>
             <div class="dev-container">
                 <div class="dev-item">
